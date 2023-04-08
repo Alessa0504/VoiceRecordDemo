@@ -38,10 +38,10 @@ class VoiceButton @JvmOverloads constructor(context: Context, attr: AttributeSet
     }
 
     sealed class StateClass {
-        data class StateNormal(val action: Int = ACTION_NONE) : StateClass()
-        data class StatePreparing(val action: Int = ACTION_NONE) : StateClass()
-        data class StateRecording(val action: Int = ACTION_NONE) : StateClass()
-        data class StateWantCancel(val action: Int = ACTION_NONE) : StateClass()
+        data class StateNormal(val action: Int = ACTION_NONE) : StateClass()  //正常状态
+        data class StatePreparing(val action: Int = ACTION_NONE) : StateClass()  //录音控件准备状态
+        data class StateRecording(val action: Int = ACTION_NONE) : StateClass()  //录制中状态
+        data class StateWantCancel(val action: Int = ACTION_NONE) : StateClass() //想要取消录制状态
     }
 
     private var recordDialogManager: RecordDialogManager
