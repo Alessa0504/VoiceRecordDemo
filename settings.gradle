@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        //添加镜像，解决gradle download过慢的问题
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "VoiceRecordDemo"
+include ':app'
+include ':modulesVoice'
+include ':modulesBase'

@@ -1,0 +1,8 @@
+<resources>
+    <string name="str_recorder_normal">Hold talk</string>
+    <string name="str_recorder_recording">End of loosening</string>
+    <string name="str_recorder_want_cancel">Release your finger to cancel sending</string>
+    <string name="str_recorder_swip_cancel">Slide your finger up to cancel sending</string>
+    <string name="str_recorder_too_short">Recording time is too short</string>
+    <string name="time_remaining">You can also record %d seconds</string>
+</resources>
